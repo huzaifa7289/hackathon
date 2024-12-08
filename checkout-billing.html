@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comforty - eCommerce HTML template</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- css link here  -->
+    <link rel="stylesheet" href="./public/assets/plugins/css/select2.css">
+    <link rel="stylesheet" href="./public/css/tailwind.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="./public/css/responsive.css">
+</head>
+
+<body>
+   <!-- header area start -->
+   <header class="font-display">
+       <div id="header-sticky" class="">
+           <div class="top-header bg-secondary">
+               <div class="container px-3 md:px-5 xl:px-0">
+                   <div class="py-3.5 flex justify-center sm:justify-between">
+                       <p class="sm:flex gap-2 items-center text-[13px] leading-[110%] text-white opacity-70 hidden">
+                           <span>
+                               <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M13.3334 4.5L6.00002 11.8333L2.66669 8.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                               </svg>
+                           </span>
+                           <span>Free shipping on all orders over $50</span>
+                       </p>
+                       <div>
+                           <ul class="flex gap-6 items-center">
+                               <li class="inline-flex items-center text-white-50 justify-center relative language">
+                                   <select class="custom-select" name="state">
+                                       <option value="AL">Eng</option>
+                                       <option value="WY">Bangla</option>
+                                   </select>
+                               </li>
+                               <li class="inline-flex items-center justify-center">
+                                   <a href="#" class="inline-flex gap-2 items-center text-white opacity-70 text-[13px] leading-[130%]">Faqs</a>
+                               </li>
+                               <li class="inline-flex items-center justify-center">
+                                   <a href="#" class="inline-flex gap-2 items-center text-white opacity-70 text-[13px] leading-[130%]">
+                                       <span>
+                                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                               <g opacity="0.7" clip-path="url(#clip0_906_1673)">
+                                                   <path d="M7.99992 14.6667C11.6818 14.6667 14.6666 11.6819 14.6666 8C14.6666 4.3181 11.6818 1.33333 7.99992 1.33333C4.31802 1.33333 1.33325 4.3181 1.33325 8C1.33325 11.6819 4.31802 14.6667 7.99992 14.6667Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                                   <path d="M8 5.33333V8" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                                   <path d="M8 10.6667H8.00615" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                               </g>
+                                               <defs>
+                                                   <clipPath id="clip0_906_1673">
+                                                       <rect width="16" height="16" fill="white" />
+                                                   </clipPath>
+                                               </defs>
+                                           </svg>
+                                       </span>
+                                       <span>Need Help</span>
+                                   </a>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="main-header bg-grayscales-500 lg:border-none border-b border-grayscales-700">
+               <div class="container px-3 md:px-5 xl:px-0">
+                   <div class="flex justify-between items-center py-5">
+                       <div>
+                           <a href="index.html">
+                               <img src="./public/assets/images/all-img/logo.png" alt="">
+                           </a>
+                       </div>
+                       <div class="lg:max-w-[413px] lg:block hidden w-full">
+                           <div class="relative">
+                               <input type="text" id="search" placeholder="search here..." class="block w-full bg-white focus:outline-none border-0 px-4 py-3 rounded-lg focus:ring-2 ring-[#029FAE]">
+                               <label for="search" class="absolute right-4 top-3">
+                                   <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M10.5833 17.4167C14.6334 17.4167 17.9167 14.1334 17.9167 10.0833C17.9167 6.03325 14.6334 2.75 10.5833 2.75C6.53325 2.75 3.25 6.03325 3.25 10.0833C3.25 14.1334 6.53325 17.4167 10.5833 17.4167Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                       <path d="M19.75 19.25L15.7625 15.2625" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                   </svg>
+                               </label>
+                           </div>
+                       </div>
+                       <div class="lg:block hidden">
+                           <ul class="flex items-center gap-3">
+                               <li class="relative">
+                                   <a href="#" class="inline-flex gap-2 bg-white rounded-lg p-[11px]" id="addToCart">
+                                       <span><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                               <path d="M2.52087 2.97916L4.42754 3.30916L5.31029 13.8261C5.3442 14.2399 5.5329 14.6258 5.83873 14.9066C6.14457 15.1875 6.54506 15.3427 6.96029 15.3413H16.9611C17.3587 15.3418 17.7431 15.1986 18.0436 14.9383C18.344 14.6779 18.5404 14.3178 18.5965 13.9242L19.4673 7.91266C19.4905 7.75279 19.482 7.58991 19.4422 7.43333C19.4024 7.27675 19.3322 7.12955 19.2354 7.00015C19.1387 6.87074 19.0175 6.76167 18.8786 6.67917C18.7397 6.59667 18.5859 6.54235 18.426 6.51933C18.3673 6.51291 4.73371 6.50833 4.73371 6.50833" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                               <path d="M12.948 9.89542H15.4899" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                               <path fill-rule="evenodd" clip-rule="evenodd" d="M6.55786 18.5194C6.62508 18.5165 6.69219 18.5273 6.75515 18.551C6.81811 18.5748 6.87562 18.611 6.9242 18.6575C6.97279 18.7041 7.01145 18.76 7.03787 18.8219C7.06428 18.8837 7.0779 18.9503 7.0779 19.0176C7.0779 19.0849 7.06428 19.1515 7.03787 19.2134C7.01145 19.2753 6.97279 19.3312 6.9242 19.3777C6.87562 19.4243 6.81811 19.4605 6.75515 19.4842C6.69219 19.508 6.62508 19.5187 6.55786 19.5158C6.42942 19.5103 6.30808 19.4554 6.21914 19.3626C6.13021 19.2698 6.08057 19.1462 6.08057 19.0176C6.08057 18.8891 6.13021 18.7655 6.21914 18.6726C6.30808 18.5798 6.42942 18.5249 6.55786 18.5194Z" fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                               <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.4659 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.4659 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z" fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                           </svg>
+                                       </span>
+                                       <span>Cart</span>
+                                       <span class="bg-dark-accents text-white rounded-full py-[3px] px-[9px] ml-1 inline-flex justify-center items-center text-[10px] leading-[100%]">2</span>
+                                   </a>
+                                   <div class="cart-content">
+                                       <ul class="p-6">
+                                           <li class="pb-4">
+                                               <div class="flex items-center justify-between">
+                                                   <div class="flex items-center gap-1">
+                                                       <div>
+                                                           <img src="./public/assets/images/all-img/cart-01.png" alt="">
+                                                       </div>
+                                                       <div class="px-2">
+                                                           <h2 class="text-gray-black"><span>Isolate Sofa Chair</span> <span class="text-[#636270]">x5</span></h2>
+                                                           <p class="text-gray-black font-semibold mb-0">$150.00</p>
+                                                       </div>
+                                                   </div>
+                                                   <div>
+                                                       <button class="hover:bg-[#F0F2F3] bg-transparent p-2 hover:text-gray-black rounded-full text-[#9A9CAA] transition-all duration-500">
+                                                           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                               <path d="M10 10L14 14M14 14L18 10M14 14L10 18M14 14L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                           </svg>
+                                                       </button>
+                                                   </div>
+                                               </div>
+                                           </li>
+                                           <li class="py-4">
+                                               <div class="flex items-center justify-between">
+                                                   <div class="flex items-center gap-1">
+                                                       <div>
+                                                           <img src="./public/assets/images/all-img/cart-01.png" alt="">
+                                                       </div>
+                                                       <div class="px-2">
+                                                           <h2 class="text-gray-black"><span>Isolate Sofa Chair</span> <span class="text-[#636270]">x5</span></h2>
+                                                           <p class="text-gray-black font-semibold mb-0">$150.00</p>
+                                                       </div>
+                                                   </div>
+                                                   <div>
+                                                       <button class="hover:bg-[#F0F2F3] bg-transparent p-2 hover:text-gray-black rounded-full text-[#9A9CAA] transition-all duration-500">
+                                                           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                               <path d="M10 10L14 14M14 14L18 10M14 14L10 18M14 14L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                           </svg>
+                                                       </button>
+                                                   </div>
+                                               </div>
+                                           </li>
+                                           <div class="flex justify-between items-center py-2 mb-4">
+                                               <p class="text-[#636270] text-lg">2 Products</p>
+                                               <p class="text-gray-black text-xl font-medium">$250.00</p>
+                                           </div>
+                                           <div class="flex justify-between items-center">
+                                               <a href="shopping-cart.html" class="btn-transparent">View Cart</a>
+                                               <a href="checkout-shopping.html" class="btn-primary">Checkout</a>
+                                           </div>
+                                       </ul>
+                                   </div>
+                               </li>
+                               <li class="inline-flex items-center justify-center">
+                                   <a href="#" class="bg-white text-gray-black hover:text-[#007580] rounded-lg p-[11px]">
+                                       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M2.63262 10.6315C1.64903 7.56067 2.79762 4.05075 6.02245 3.01217C6.85867 2.74459 7.74676 2.68086 8.61262 2.82629C9.47849 2.97172 10.297 3.32208 10.9999 3.84817C12.3337 2.81692 14.2743 2.46858 15.9683 3.01217C19.1922 4.05075 20.349 7.56067 19.3664 10.6315C17.8355 15.499 10.9999 19.2482 10.9999 19.2482C10.9999 19.2482 4.21478 15.5558 2.63262 10.6315V10.6315Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                   </a>
+                               </li>
+                               <li class="relative">
+                                   <button class="bg-white text-gray-black hover:text-[#007580] rounded-lg p-[11px] user-profile">
+                                       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9862 14.0672C7.44053 14.0672 4.4137 14.6034 4.4137 16.7503C4.4137 18.8971 7.42128 19.4526 10.9862 19.4526C14.5309 19.4526 17.5587 18.9154 17.5587 16.7695C17.5587 14.6236 14.5502 14.0672 10.9862 14.0672V14.0672Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9862 11.0055C11.8195 11.0055 12.634 10.7584 13.3268 10.2955C14.0197 9.83255 14.5597 9.17457 14.8785 8.40475C15.1974 7.63492 15.2808 6.78783 15.1183 5.97058C14.9557 5.15334 14.5545 4.40266 13.9653 3.81346C13.3761 3.22426 12.6254 2.82301 11.8081 2.66045C10.9909 2.49789 10.1438 2.58132 9.37397 2.9002C8.60415 3.21907 7.94617 3.75906 7.48324 4.45188C7.02031 5.14471 6.77322 5.95925 6.77322 6.7925C6.76932 7.90581 7.20779 8.97508 7.99218 9.76515C8.77657 10.5552 9.84266 11.0014 10.956 11.0055H10.9862Z" stroke="currentColor" stroke-width="1.429" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                   </button>
+                                   <div class="profile-content">
+                                       <ul class="py-3">
+                                           <div class="px-3 shadow-[0px_1px_0px_#E1E3E6]">
+                                               <li>
+                                                   <a href="sign-in.html">Sign In</a>
+                                               </li>
+                                               <li>
+                                                   <a href="sign-up.html">Create a Account</a>
+                                               </li>
+                                           </div>
+                                           <div class="px-3 shadow-[0px_1px_0px_#E1E3E6]">
+                                               <li>
+                                                   <a href="account-setting.html">Account Settings</a>
+                                               </li>
+                                               <li>
+                                                   <a href="order-history.html">Order History</a>
+                                               </li>
+                                           </div>
+                                           <div class="px-3 shadow-[0px_1px_0px_#E1E3E6]">
+                                               <li>
+                                                   <a href="wishlist.html">Wishlist</a>
+                                               </li>
+                                               <li>
+                                                   <a href="shopping-cart.html">Shopping Cart</a>
+                                               </li>
+                                           </div>
+                                           <div class="px-3">
+                                               <li>
+                                                   <a href="#">Logout</a>
+                                               </li>
+                                           </div>
+                                       </ul>
+                                   </div>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="lg:hidden inline-block hamburger-btn" id="hamburger-btn">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="bottom-header bg-white shadow-[0px_1px_0px_#E1E3E6] relative z-30 hidden lg:block">
+           <div class="container px-3 md:px-5 xl:px-0">
+               <div class="py-3.5 flex justify-between items-center">
+                   <div class="flex gap-8 items-center">
+                       <div class="relative">
+                           <button class="max-h-12 inline-flex items-center justify-center gap-4 py-3.5 px-5 border border-grayscales-700 rounded-md custom-dropdown text-gray-black text-sm leading-4 font-medium font-display">
+                               <span class="text-gray-black inline-flex">
+                                   <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M18 2.5H0V0.5H18V2.5Z" fill="currentColor" />
+                                       <path d="M18 8.5H0V6.5H18V8.5Z" fill="currentColor" />
+                                       <path d="M18 14.5H0V12.5H18V14.5Z" fill="currentColor" />
+                                   </svg>
+                               </span>
+                               <span class="text-gray-black inline-flex">All Categories</span>
+                           </button>
+                           <div class="dropdown-content">
+                               <ul class="p-3">
+                                   <li>
+                                       <a href="#">Wodden</a>
+                                   </li>
+                                   <li>
+                                       <a href="#">Partex</a>
+                                   </li>
+                                   <li>
+                                       <a href="#">Plywood</a>
+                                   </li>
+                                   <li>
+                                       <a href="#">Segun</a>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+
+                       <ul class="lg:flex gap-8 items-center hidden main-menu">
+                           <li>
+                               <a href="index.html">Home</a>
+                           </li>
+                           <li>
+                               <a href="products.html">Shop</a>
+                           </li>
+                           <li>
+                               <a href="product-details.html">Product</a>
+                           </li>
+                           <li class="relative">
+                               <a href="javascript:void(0);" class="inline-flex gap-2 items-center">Pages
+                                   <span>
+                                       <img src="./public/assets/images/all-img/select-arrow.png" alt="">
+                                   </span>
+                               </a>
+                               <ul>
+                                   <li>
+                                       <a href="404.html">404</a>
+                                   </li>
+                                   <li>
+                                       <a href="account-setting.html">Account Setting</a>
+                                   </li>
+                                   <li>
+                                       <a href="sign-in.html">Sign In</a>
+                                   </li>
+                                   <li>
+                                       <a href="sign-up.html">Sign Up</a>
+                                   </li>
+                                   <li>
+                                       <a href="forget-password.html">Forget Password</a>
+                                   </li>
+                                   <li>
+                                       <a href="change-password.html">Change Password</a>
+                                   </li>
+                                   <li>
+                                       <a href="products.html">Product List</a>
+                                   </li>
+                                   <li>
+                                       <a href="product-details.html">Product Details</a>
+                                   </li>
+                                   <li>
+                                       <a href="shopping-cart.html">Shopping Cart</a>
+                                   </li>
+                                   <li>
+                                       <a href="wishlist.html">Wishlist</a>
+                                   </li>
+                                   <li>
+                                       <a href="checkout-billing.html">Checkout Billing</a>
+                                   </li>
+                                   <li>
+                                       <a href="checkout-shopping.html">Checkout Shoping</a>
+                                   </li>
+                               </ul>
+                           </li>
+                           <li>
+                               <a href="">About</a>
+                           </li>
+                       </ul>
+                   </div>
+                   <div>
+                       <p class="text-grayscales-900 inline-flex gap-2 items-center text-sm font-display"><span>Contact:</span><span class="text-secondary font-medium">(808) 555-0111</span></p>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!-- Mobile Menu Area Start -->
+       <div class="nav-menu" id="nav-menu">
+           <div class="flex justify-between  items-center px-3 py-4 mb-4">
+               <div>
+                   <a href="#">
+                       <img src="./public/assets/images/all-img/logo-sm.png" alt="">
+                   </a>
+               </div>
+               <ul class="flex items-center gap-3">
+                   <li>
+                       <a href="#" class="inline-flex gap-2 bg-white rounded-lg p-[11px] relative">
+                           <span>
+                               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M2.52087 2.97916L4.42754 3.30916L5.31029 13.8261C5.3442 14.2399 5.5329 14.6258 5.83873 14.9066C6.14457 15.1875 6.54506 15.3427 6.96029 15.3413H16.9611C17.3587 15.3418 17.7431 15.1986 18.0436 14.9383C18.344 14.6779 18.5404 14.3178 18.5965 13.9242L19.4673 7.91266C19.4905 7.75279 19.482 7.58991 19.4422 7.43333C19.4024 7.27675 19.3322 7.12955 19.2354 7.00015C19.1387 6.87074 19.0175 6.76167 18.8786 6.67917C18.7397 6.59667 18.5859 6.54235 18.426 6.51933C18.3673 6.51291 4.73371 6.50833 4.73371 6.50833" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                   <path d="M12.948 9.89542H15.4899" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M6.55786 18.5194C6.62508 18.5165 6.69219 18.5273 6.75515 18.551C6.81811 18.5748 6.87562 18.611 6.9242 18.6575C6.97279 18.7041 7.01145 18.76 7.03787 18.8219C7.06428 18.8837 7.0779 18.9503 7.0779 19.0176C7.0779 19.0849 7.06428 19.1515 7.03787 19.2134C7.01145 19.2753 6.97279 19.3312 6.9242 19.3777C6.87562 19.4243 6.81811 19.4605 6.75515 19.4842C6.69219 19.508 6.62508 19.5187 6.55786 19.5158C6.42942 19.5103 6.30808 19.4554 6.21914 19.3626C6.13021 19.2698 6.08057 19.1462 6.08057 19.0176C6.08057 18.8891 6.13021 18.7655 6.21914 18.6726C6.30808 18.5798 6.42942 18.5249 6.55786 18.5194Z" fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M16.8988 18.5194C17.0312 18.5194 17.1583 18.5721 17.252 18.6657C17.3457 18.7594 17.3983 18.8865 17.3983 19.019C17.3983 19.1515 17.3457 19.2786 17.252 19.3723C17.1583 19.4659 17.0312 19.5186 16.8988 19.5186C16.7663 19.5186 16.6392 19.4659 16.5455 19.3723C16.4518 19.2786 16.3992 19.1515 16.3992 19.019C16.3992 18.8865 16.4518 18.7594 16.5455 18.6657C16.6392 18.5721 16.7663 18.5194 16.8988 18.5194Z" fill="#272343" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                               </svg>
+                           </span>
+                           <span class="bg-dark-accents absolute -top-1 right-0 text-white rounded-full px-2 py-1.5 inline-flex justify-center items-center text-[10px] leading-[100%]">2</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#" class="bg-white text-gray-black flex hover:text-[#007580] rounded-lg p-[11px]">
+                           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" clip-rule="evenodd" d="M2.63262 10.6315C1.64903 7.56067 2.79762 4.05075 6.02245 3.01217C6.85867 2.74459 7.74676 2.68086 8.61262 2.82629C9.47849 2.97172 10.297 3.32208 10.9999 3.84817C12.3337 2.81692 14.2743 2.46858 15.9683 3.01217C19.1922 4.05075 20.349 7.56067 19.3664 10.6315C17.8355 15.499 10.9999 19.2482 10.9999 19.2482C10.9999 19.2482 4.21478 15.5558 2.63262 10.6315V10.6315Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                       </a>
+                   </li>
+                   <li class="relative">
+                       <button class="bg-white text-gray-black hover:text-[#007580] rounded-lg p-[11px] user-profile">
+                           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9862 14.0672C7.44053 14.0672 4.4137 14.6034 4.4137 16.7503C4.4137 18.8971 7.42128 19.4526 10.9862 19.4526C14.5309 19.4526 17.5587 18.9154 17.5587 16.7695C17.5587 14.6236 14.5502 14.0672 10.9862 14.0672V14.0672Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                               <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9862 11.0055C11.8195 11.0055 12.634 10.7584 13.3268 10.2955C14.0197 9.83255 14.5597 9.17457 14.8785 8.40475C15.1974 7.63492 15.2808 6.78783 15.1183 5.97058C14.9557 5.15334 14.5545 4.40266 13.9653 3.81346C13.3761 3.22426 12.6254 2.82301 11.8081 2.66045C10.9909 2.49789 10.1438 2.58132 9.37397 2.9002C8.60415 3.21907 7.94617 3.75906 7.48324 4.45188C7.02031 5.14471 6.77322 5.95925 6.77322 6.7925C6.76932 7.90581 7.20779 8.97508 7.99218 9.76515C8.77657 10.5552 9.84266 11.0014 10.956 11.0055H10.9862Z" stroke="currentColor" stroke-width="1.429" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                       </button>
+                       <div class="profile-content">
+                           <ul>
+                               <li>
+                                   <a href="#">Wodden</a>
+                               </li>
+                               <li>
+                                   <a href="#">Partex</a>
+                               </li>
+                               <li>
+                                   <a href="#">Plywood</a>
+                               </li>
+                               <li>
+                                   <a href="#">Segun</a>
+                               </li>
+                           </ul>
+                       </div>
+                   </li>
+                   <li>
+                       <span class="hamburger-btn-close bg-[#F7F7F9] text-black w-[44px] h-[44px] rounded-full flex items-center justify-center" id="hamburger-btn-close">
+                           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                               <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                           </svg>
+                       </span>
+                   </li>
+               </ul>
+           </div>
+           <div class="px-3 mb-4">
+               <div class="lg:max-w-[413px] w-full">
+                   <div class="relative">
+                       <input type="text" placeholder="search here..." class="block w-full bg-grayscales-500 focus:outline-none border-0 px-4 py-3 rounded-lg">
+                       <span class="absolute right-4 top-3">
+                           <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M10.5833 17.4167C14.6334 17.4167 17.9167 14.1334 17.9167 10.0833C17.9167 6.03325 14.6334 2.75 10.5833 2.75C6.53325 2.75 3.25 6.03325 3.25 10.0833C3.25 14.1334 6.53325 17.4167 10.5833 17.4167Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                               <path d="M19.75 19.25L15.7625 15.2625" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                           </svg>
+                       </span>
+                   </div>
+               </div>
+           </div>
+           <!-- menu -->
+           <div>
+               <nav class="tabs flex flex-row">
+                   <button data-target="panel-1" class="tab rounded-none w-1/2 active text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500">
+                       Menu
+                   </button>
+                   <button data-target="panel-2" class="tab rounded-none w-1/2 ext-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none border-b-2 font-medium border-blue-500">
+                       Categories
+                   </button>
+               </nav>
+           </div>
+
+           <div id="panels">
+               <div class="panel-1 tab-content active">
+                   <ul class="flex flex-col items-center">
+                       <li class="w-full block">
+                           <a href="" class="border-b border-[#029FAE] block px-3 py-2">Home</a>
+                       </li>
+                       <li class="w-full block">
+                           <a href="" class="border-b border-[#029FAE] block px-3 py-2">Shop</a>
+                       </li>
+                       <li class="w-full block">
+                           <a href="" class="border-b border-[#029FAE] block px-3 py-2">Product</a>
+                       </li>
+                       <li class="w-full block">
+                           <a href="" class="border-b border-[#029FAE] block px-3 py-2">Pages</a>
+                       </li>
+                       <li class="w-full block">
+                           <a href="" class="border-b border-[#029FAE] block px-3 py-2">About</a>
+                       </li>
+                   </ul>
+               </div>
+               <div class="panel-2 tab-content py-5">
+                   <ul>
+                       <li>
+                           <a href="#" class="border-b border-[#029FAE] block px-3 py-2">Wodden</a>
+                       </li>
+                       <li>
+                           <a href="#" class="border-b border-[#029FAE] block px-3 py-2">Partex</a>
+                       </li>
+                       <li>
+                           <a href="#" class="border-b border-[#029FAE] block px-3 py-2">Plywood</a>
+                       </li>
+                       <li>
+                           <a href="#" class="border-b border-[#029FAE] block px-3 py-2">Segun</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       <!-- Mobile Menu Area End -->
+       <div class="overlay" id="overlay"></div>
+   </header>
+   <!-- header area end -->
+
+    <!-- Breadcrumb Start -->
+    <div class="breadcrumb">
+        <div class="container px-3 md:px-5 xl:px-0">
+            <div class="flex items-center gap-1 py-[1.5px]">
+                <a href="#" class="text-[14px] font-normal leading-[110%] text-dark-gray">Home</a>
+
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.125 5.25L10.875 9L7.125 12.75" stroke="#636270" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <span class="text-[14px] font-medium leading-[110%] font-display text-gray-black inline-block">Shop</span>
+            </div>
+
+            <h2 class="pt-[13.5px] text-2xl font-semibold text-gray-black font-display">Shop</h2>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Sign In Form Start -->
+    <div class="container py-20">
+        <div class="flex flex-wrap lg:flex-nowrap items-start gap-6">
+            <!-- cart billing start -->
+            <div class="cart-total lg:w-2/3 w-full p-8">
+                <h2 class="text-start text-2xl text-[#272343] font-semibold mb-6 font-display">Billing Information</h2>
+                <div>
+                    <form action="" class="">
+                        <div class="flex flex-col sm:flex-row gap-5 items-center mb-5">
+                            <div class=" w-full">
+                                <input type="text" placeholder="First Name" class="input-box focus:outline-none focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out">
+                            </div>
+
+                            <div class=" w-full">
+
+                                <input type="text" placeholder="Last Name" class="input-box focus:outline-none  focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="w-full inline-flex mb-5">
+                            <textarea class="input-box focus:outline-none  focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out" placeholder="Address" name="" id="" cols="10" rows="5"></textarea>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-5 items-center mb-5">
+                            <div class=" w-full">
+                                <input type="text" placeholder="Phone" class="input-box focus:outline-none  focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out">
+                            </div>
+
+                            <div class=" w-full">
+
+                                <input type="text" placeholder="Email" class="input-box focus:outline-none  focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="cursor-pointer">
+                            <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" class="cursor-pointer" type="checkbox" value="yes">
+                            <label for="wp-comment-cookies-consent">Ship to a different address</label>
+                        </div>
+                        <hr class="my-8">
+
+                        <div>
+                            <h2 class="mb-6 text-2xl text-[#272343] font-display font-semibold">Payment</h2>
+                            <!-- <div class="flex items-center mt-6">
+                                    <input id="default-radio-2" type="radio" value="" name="default-radio"
+                                    class="w-4 h-4  border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 cursor-pointer">
+                                    <label for="default-radio-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cash on Delivery</label>
+                                </div> -->
+                            <div class="flex items-center mb-4 ">
+                                <input checked id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4">
+                                <label for="default-radio-1" class="ml-2 text-[18px] leading-[110%] font-normal text-gray-black cursor-pointer">Cash on Delivery</label>
+                            </div>
+                            <!-- <div class="my-8 border h-[1px] border-gray-black"></div> -->
+                            <hr>
+
+                            <div class="flex items-center gap-[27px] pb-6">
+
+                                <div class="flex items-center">
+                                    <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4">
+                                    <label for="default-radio-2" class="ml-2 text-[18px] leading-[110%] font-normal text-gray-black cursor-pointer">Paypel</label>
+                                </div>
+                                <span>
+                                    <svg width="162" height="21" viewBox="0 0 162 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.5">
+                                            <path d="M4.79565 5.16931H1.68713C1.58422 5.16925 1.48468 5.20594 1.40642 5.27277C1.32817 5.33961 1.27636 5.43219 1.26033 5.53384L0.00310611 13.5049C-0.00267374 13.5419 -0.000368125 13.5797 0.00986307 13.6157C0.0200943 13.6517 0.0380082 13.6851 0.0623721 13.7135C0.086736 13.7419 0.116971 13.7647 0.150995 13.7804C0.185018 13.796 0.222022 13.804 0.25946 13.804H1.74349C1.84647 13.804 1.94607 13.7673 2.02433 13.7003C2.10259 13.6334 2.15436 13.5407 2.1703 13.439L2.50937 11.2891C2.5253 11.1874 2.577 11.0948 2.65516 11.0279C2.73333 10.961 2.83282 10.9242 2.93572 10.9241H3.91978C5.96742 10.9241 7.1492 9.93322 7.45782 7.96966C7.59691 7.1106 7.46373 6.43563 7.06147 5.96292C6.61967 5.44385 5.83606 5.16931 4.79565 5.16931V5.16931ZM5.15427 8.08056C4.98428 9.19598 4.13204 9.19598 3.30798 9.19598H2.83891L3.16799 7.11287C3.17762 7.05193 3.20869 6.99643 3.2556 6.95635C3.30251 6.91627 3.36218 6.89425 3.42388 6.89425H3.63888C4.20022 6.89425 4.72974 6.89425 5.00337 7.21423C5.16655 7.40514 5.21654 7.68876 5.15427 8.08056V8.08056ZM14.0876 8.04466H12.599C12.5373 8.04466 12.4776 8.06668 12.4307 8.10676C12.3838 8.14684 12.3527 8.20234 12.3431 8.26328L12.2772 8.67963L12.1731 8.52873C11.8508 8.06102 11.1322 7.90466 10.415 7.90466C8.77004 7.90466 7.3651 9.15052 7.09147 10.8982C6.94921 11.77 7.15147 12.6036 7.646 13.1849C8.09961 13.7194 8.74868 13.9422 9.52092 13.9422C10.8463 13.9422 11.5813 13.0899 11.5813 13.0899L11.5149 13.5035C11.509 13.5405 11.5112 13.5783 11.5213 13.6144C11.5314 13.6505 11.5492 13.6839 11.5735 13.7124C11.5978 13.7409 11.628 13.7638 11.662 13.7796C11.6959 13.7953 11.7329 13.8035 11.7704 13.8035H13.1112C13.2142 13.8036 13.3138 13.7668 13.3921 13.6999C13.4703 13.633 13.5221 13.5403 13.538 13.4385L14.3426 8.34374C14.3485 8.30684 14.3463 8.26909 14.3362 8.23311C14.3261 8.19713 14.3084 8.16377 14.2841 8.13533C14.2599 8.10689 14.2297 8.08406 14.1958 8.0684C14.1619 8.05275 14.1249 8.04464 14.0876 8.04466V8.04466ZM12.0126 10.9418C11.869 11.7922 11.194 12.3631 10.3332 12.3631C9.90091 12.3631 9.55547 12.2245 9.33366 11.9618C9.11367 11.7009 9.03003 11.3295 9.10003 10.9159C9.23412 10.0728 9.92046 9.48324 10.7682 9.48324C11.1909 9.48324 11.5345 9.62369 11.7608 9.88868C11.9876 10.1564 12.0776 10.53 12.0126 10.9418V10.9418ZM22.0154 8.04466H20.5196C20.449 8.04477 20.3796 8.06209 20.3173 8.09512C20.2549 8.12815 20.2016 8.17589 20.1619 8.23419L18.0988 11.2732L17.2243 8.35283C17.1974 8.26376 17.1426 8.1857 17.068 8.13019C16.9933 8.07469 16.9028 8.0447 16.8097 8.04466H15.3398C15.2985 8.04455 15.2578 8.05429 15.2211 8.07309C15.1844 8.09188 15.1527 8.11917 15.1286 8.1527C15.1045 8.18623 15.0888 8.22501 15.0828 8.26583C15.0768 8.30665 15.0806 8.34832 15.0939 8.38737L16.7416 13.2226L15.1925 15.4094C15.165 15.4481 15.1487 15.4937 15.1453 15.5412C15.142 15.5886 15.1518 15.636 15.1736 15.6783C15.1954 15.7205 15.2285 15.756 15.2691 15.7807C15.3097 15.8054 15.3563 15.8185 15.4039 15.8184H16.8979C16.9677 15.8185 17.0364 15.8017 17.0982 15.7694C17.1601 15.7371 17.2131 15.6903 17.2529 15.633L22.2282 8.45146C22.2551 8.41261 22.2709 8.36711 22.2739 8.31991C22.2769 8.27271 22.2668 8.2256 22.2449 8.18368C22.223 8.14177 22.19 8.10666 22.1496 8.08215C22.1091 8.05765 22.0627 8.04468 22.0154 8.04466V8.04466Z" fill="#253B80" />
+                                            <path d="M26.9676 5.16873H23.8586C23.7558 5.16877 23.6564 5.20551 23.5782 5.27234C23.5 5.33916 23.4483 5.43168 23.4323 5.53326L22.1751 13.5043C22.1692 13.5412 22.1714 13.579 22.1816 13.615C22.1917 13.651 22.2096 13.6843 22.2338 13.7127C22.2581 13.7412 22.2883 13.764 22.3222 13.7796C22.3562 13.7953 22.3931 13.8034 22.4305 13.8034H24.0259C24.0979 13.8033 24.1674 13.7775 24.2221 13.7307C24.2768 13.6839 24.3129 13.6191 24.3241 13.548L24.6809 11.2885C24.6968 11.1868 24.7485 11.0942 24.8267 11.0273C24.9048 10.9604 25.0043 10.9236 25.1072 10.9235H26.0908C28.1389 10.9235 29.3202 9.93264 29.6293 7.96908C29.7689 7.11002 29.6348 6.43504 29.2325 5.96233C28.7912 5.44326 28.008 5.16873 26.9676 5.16873V5.16873ZM27.3262 8.07998C27.1567 9.19539 26.3044 9.19539 25.4799 9.19539H25.0113L25.3408 7.11229C25.3503 7.05134 25.3812 6.99579 25.4281 6.95569C25.475 6.91559 25.5346 6.89359 25.5963 6.89366H25.8113C26.3722 6.89366 26.9021 6.89366 27.1758 7.21365C27.339 7.40455 27.3885 7.68818 27.3262 8.07998V8.07998ZM36.2591 8.04407H34.7714C34.7097 8.0439 34.65 8.06587 34.6031 8.10599C34.5562 8.14611 34.5253 8.20172 34.5159 8.2627L34.45 8.67905L34.3455 8.52815C34.0232 8.06044 33.3051 7.90408 32.5878 7.90408C30.9429 7.90408 29.5384 9.14994 29.2648 10.8976C29.123 11.7694 29.3243 12.603 29.8189 13.1843C30.2734 13.7189 30.9215 13.9416 31.6938 13.9416C33.0192 13.9416 33.7542 13.0893 33.7542 13.0893L33.6878 13.503C33.6819 13.54 33.6841 13.5779 33.6942 13.614C33.7044 13.6502 33.7223 13.6836 33.7467 13.7122C33.771 13.7407 33.8013 13.7636 33.8354 13.7793C33.8695 13.7949 33.9066 13.803 33.9442 13.8029H35.2846C35.3875 13.8029 35.4869 13.7661 35.5651 13.6992C35.6433 13.6322 35.695 13.5396 35.7109 13.438L36.5159 8.34315C36.5216 8.30614 36.5192 8.26833 36.5089 8.23232C36.4986 8.1963 36.4807 8.16295 36.4563 8.13453C36.4319 8.10612 36.4016 8.08332 36.3676 8.06771C36.3335 8.05209 36.2965 8.04403 36.2591 8.04407V8.04407ZM34.1841 10.9412C34.0414 11.7917 33.3655 12.3625 32.5047 12.3625C32.0733 12.3625 31.727 12.2239 31.5052 11.9612C31.2852 11.7003 31.2024 11.3289 31.2715 10.9153C31.4065 10.0722 32.092 9.48265 32.9396 9.48265C33.3624 9.48265 33.706 9.6231 33.9323 9.88809C34.1601 10.1558 34.2501 10.5294 34.1841 10.9412V10.9412ZM38.014 5.38736L36.7381 13.5043C36.7323 13.5412 36.7345 13.579 36.7447 13.615C36.7548 13.651 36.7726 13.6843 36.7969 13.7127C36.8212 13.7412 36.8514 13.764 36.8853 13.7796C36.9193 13.7953 36.9562 13.8034 36.9936 13.8034H38.2763C38.4894 13.8034 38.6703 13.6489 38.7031 13.4384L39.9612 5.46781C39.967 5.43086 39.9648 5.39309 39.9547 5.35708C39.9445 5.32108 39.9267 5.2877 39.9024 5.25924C39.8782 5.23078 39.848 5.20791 39.8141 5.19221C39.7801 5.17651 39.7432 5.16834 39.7058 5.16827H38.2694C38.2078 5.16849 38.1482 5.19066 38.1014 5.2308C38.0546 5.27095 38.0236 5.32645 38.014 5.38736V5.38736Z" fill="#179BD7" />
+                                            <path d="M72.545 15.413V15.1047H72.4648L72.3719 15.3163L72.2795 15.1047H72.199V15.413H72.256V15.1808L72.3429 15.3811H72.4019L72.4888 15.1803V15.413H72.5453H72.545ZM72.0358 15.413V15.1575H72.1385V15.1055H71.876V15.1575H71.9787V15.413H72.0352H72.0358Z" fill="#F79410" />
+                                            <path d="M63.4206 16.7354H56.4736V4.25085H63.4207L63.4206 16.7354Z" fill="#FF5F00" />
+                                            <path d="M56.9145 10.4934C56.9145 7.96089 58.1003 5.70493 59.9468 4.25109C58.5491 3.14899 56.8204 2.55085 55.0404 2.55348C50.6558 2.55348 47.1016 6.10824 47.1016 10.4934C47.1016 14.8785 50.6558 18.4333 55.0404 18.4333C56.8204 18.4359 58.5492 17.8378 59.9469 16.7357C58.1006 15.2821 56.9145 13.026 56.9145 10.4934Z" fill="#EB001B" />
+                                            <path d="M72.7933 10.4934C72.7933 14.8785 69.239 18.4333 64.8544 18.4333C63.0742 18.4359 61.3453 17.8378 59.9473 16.7357C61.7943 15.2818 62.98 13.026 62.98 10.4934C62.98 7.96076 61.7943 5.70493 59.9473 4.25109C61.3452 3.14903 63.0741 2.55089 64.8543 2.55348C69.2389 2.55348 72.7931 6.10824 72.7931 10.4934" fill="#F79E1B" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M115.613 15.1992C115.613 16.096 115.048 16.514 114.038 16.514H112.107V15.6172H114.038C114.216 15.6172 114.365 15.5875 114.424 15.5279C114.484 15.4679 114.543 15.3782 114.543 15.2588C114.543 15.139 114.484 15.0196 114.424 14.96C114.365 14.9 114.246 14.8703 114.068 14.8703C113.147 14.8402 111.988 14.9 111.988 13.5851C111.988 12.9871 112.374 12.3295 113.414 12.3295H115.404V13.2263H113.562C113.384 13.2263 113.265 13.2263 113.176 13.2859C113.087 13.3756 113.028 13.4653 113.028 13.6148C113.028 13.7643 113.117 13.854 113.236 13.914C113.355 13.9437 113.474 13.9736 113.622 13.9736H114.157C114.721 13.9736 115.078 14.0929 115.316 14.3025C115.494 14.5115 115.613 14.7809 115.613 15.1992ZM111.423 14.3025C111.185 14.0929 110.829 13.9736 110.264 13.9736H109.73C109.581 13.9736 109.462 13.9434 109.344 13.914C109.225 13.854 109.136 13.7643 109.136 13.6148C109.136 13.4653 109.165 13.3756 109.284 13.2859C109.373 13.2263 109.492 13.2263 109.67 13.2263H111.512V12.3295H109.522C108.452 12.3295 108.096 12.9871 108.096 13.5851C108.096 14.8998 109.254 14.8402 110.176 14.8703C110.353 14.8703 110.473 14.9 110.532 14.96C110.591 15.0196 110.651 15.139 110.651 15.2588C110.651 15.3782 110.591 15.4679 110.532 15.5279C110.443 15.5875 110.324 15.6172 110.146 15.6172H108.214V16.514H110.146C111.156 16.514 111.72 16.0958 111.72 15.1992C111.72 14.7809 111.602 14.5115 111.423 14.3025ZM107.62 15.6475H105.273V14.8105H107.561V13.974H105.273V13.1966H107.62V12.3299H104.293V16.5142H107.62V15.6475ZM103.223 12.5392C102.896 12.3598 102.51 12.3297 102.005 12.3297H99.7174V16.514H100.727V14.9897H101.797C102.153 14.9897 102.362 15.0198 102.51 15.1691C102.689 15.3782 102.689 15.737 102.689 16.0061V16.514H103.669V15.7069C103.669 15.3184 103.639 15.139 103.52 14.9299C103.431 14.8101 103.253 14.6608 103.015 14.5711C103.283 14.4819 103.729 14.1231 103.729 13.4653C103.728 12.9873 103.55 12.7182 103.223 12.5392ZM97.5781 12.3297H94.399L93.1214 13.7047L91.9032 12.3297H87.8923V16.514H91.844L93.1216 15.139L94.3398 16.514H96.271V15.1095H97.5189C98.3804 15.1095 99.2423 14.8703 99.2423 13.7047C99.2421 12.5689 98.3507 12.3297 97.5781 12.3297ZM102.421 14.0635C102.272 14.1231 102.124 14.1231 101.945 14.1231L100.727 14.1532V13.1964H101.945C102.124 13.1964 102.302 13.1964 102.421 13.2861C102.54 13.3461 102.629 13.4655 102.629 13.6449C102.629 13.8243 102.54 13.9738 102.421 14.0635ZM97.5781 14.2726H96.2708V13.1964H97.5781C97.9348 13.1964 98.1723 13.3461 98.1723 13.7047C98.1723 14.0635 97.9346 14.2726 97.5781 14.2726ZM93.7453 14.4218L95.2902 12.7782V16.1556L93.7453 14.4218ZM91.3387 15.6475H88.8727V14.8105H91.0712V13.974H88.8727V13.1966H91.3684L92.4677 14.4221L91.3387 15.6475ZM112.849 9.31089H111.423L109.551 6.17248V9.31089H107.531L107.145 8.38421H105.065L104.679 9.31089H103.52C103.045 9.31089 102.421 9.19129 102.065 8.83249C101.738 8.47391 101.559 7.99573 101.559 7.24844C101.559 6.62076 101.648 6.05288 102.094 5.6046C102.391 5.2757 102.926 5.12641 103.609 5.12641H104.56V6.0232H103.609C103.253 6.0232 103.045 6.083 102.837 6.2624C102.658 6.4418 102.569 6.77048 102.569 7.21876C102.569 7.66704 102.658 7.99594 102.837 8.20524C102.985 8.35453 103.253 8.41433 103.52 8.41433H103.966L105.392 5.12663H106.877L108.541 9.07191V5.12641H110.086L111.839 8.02563V5.12641H112.849V9.31089H112.849ZM101.054 5.12641H100.044V9.31089H101.054V5.12641ZM98.9447 5.30581C98.6177 5.12641 98.2615 5.12641 97.7565 5.12641H95.4685V9.31089H96.4489V7.78643H97.5185C97.8751 7.78643 98.1129 7.81633 98.2613 7.96583C98.4396 8.17513 98.4097 8.53393 98.4097 8.77291V9.31089H99.4196V8.47391C99.4196 8.11533 99.3901 7.93593 99.2417 7.72663C99.1525 7.60703 98.9742 7.45753 98.7663 7.36804C99.0334 7.24844 99.4795 6.91976 99.4795 6.26218C99.4797 5.784 99.2714 5.5149 98.9447 5.30581ZM94.7554 8.44423H92.438V7.60725H94.7257V6.74058H92.438V5.9933H94.7554V5.12663H91.4279V9.31111H94.7554V8.44423ZM90.6851 5.12641H89.051L87.8329 7.96583L86.5255 5.12641H84.9212V9.07169L83.2277 5.12641H81.7423L79.9596 9.31089H81.0292L81.4153 8.38421H83.495L83.8812 9.31089H85.9016V6.0232L87.3573 9.31089H88.2188L89.6747 6.0232V9.31089H90.6848V5.12641H90.6851ZM106.789 7.48765L106.105 5.8438L105.422 7.48765H106.789ZM98.1723 6.83028C98.024 6.91998 97.8753 6.91998 97.6673 6.91998H96.4489V5.99351H97.6671C97.8454 5.99351 98.053 5.99351 98.1721 6.05331C98.2908 6.14301 98.3505 6.26261 98.3505 6.4418C98.3505 6.62098 98.291 6.77026 98.1723 6.83028ZM81.7718 7.48765L82.4552 5.8438L83.1386 7.48765H81.7718ZM115.375 0.859009H79.9297V7.06926L81.1478 4.28965H83.7326L84.0892 4.97713V4.28965H87.1198L87.8031 5.784L88.4568 4.28965H98.1129C98.5583 4.28965 98.9445 4.37935 99.2419 4.61833V4.28965H101.886V4.61833C102.331 4.37913 102.896 4.28965 103.55 4.28965H107.382L107.739 4.97713V4.28965H110.562L110.978 4.97713V4.28965H113.74V10.1479H110.948L110.413 9.25131V10.1479H106.937L106.551 9.19151H105.689L105.303 10.1479H103.491C102.777 10.1479 102.242 9.96848 101.886 9.78929V10.1479H97.5781V8.80281C97.5781 8.62341 97.5484 8.59351 97.4295 8.59351H97.2811V10.1477H88.9618V9.40038L88.6648 10.1477H86.9119L86.6149 9.43028V10.1477H83.2574L82.901 9.19129H82.0393L81.6531 10.1477H79.9297V20.1277H115.375V17.0819C114.989 17.2613 114.454 17.351 113.919 17.351H111.334V16.9922C111.037 17.2316 110.502 17.351 109.997 17.351H101.856V16.0061C101.856 15.8267 101.827 15.8267 101.678 15.8267H101.53V17.351H98.8555V15.7669C98.4101 15.976 97.9048 15.976 97.4592 15.976H97.162V17.351H93.8939L93.1216 16.4542L92.2601 17.351H87.0009V11.4929H92.3488L93.1214 12.3893L93.9534 11.4929H97.5484C97.9641 11.4929 98.6477 11.5525 98.9447 11.8513V11.4929H102.153C102.48 11.4929 103.104 11.5525 103.52 11.8513V11.4929H108.363V11.8515C108.63 11.6123 109.136 11.4932 109.581 11.4932H112.285V11.8515C112.582 11.6424 112.998 11.4932 113.533 11.4932H115.375V0.859009Z" fill="#9A9CAA" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M136.562 16.6481H139.765L141.767 4.34622H138.564L136.562 16.6481ZM130.814 12.8075L133.868 4.34622H137.315L132.219 16.6484H128.882L126.099 5.96062C124.293 4.87569 122.749 4.55452 122.749 4.55452L122.749 4.55416C122.749 4.55413 122.749 4.55411 122.749 4.55411L122.808 4.34581H127.856C128.925 4.34581 129.249 5.00202 129.341 5.30427C129.369 5.39494 129.376 5.45386 129.376 5.45386L130.453 10.9861L130.453 10.9857L130.453 10.9855L130.814 12.8075ZM162 16.6481H159.059L158.684 14.8208H154.613L153.945 16.6481H150.606L155.383 5.26267C155.383 5.26267 155.673 4.34589 156.862 4.34589H159.436L162 16.6481ZM157.218 7.69283L155.535 12.2965H158.165L157.218 7.69283ZM151.314 4.66278L150.857 7.30453C149.486 6.54932 146.367 6.37064 146.367 7.76161C146.367 8.31419 147.072 8.69423 147.923 9.15227C149.213 9.84693 150.836 10.721 150.836 12.6486C150.836 15.7286 147.539 16.8603 145.353 16.8603C143.168 16.8603 141.738 16.1656 141.738 16.1656L142.214 13.4035C143.526 14.4561 147.499 14.7553 147.499 13.0859C147.499 12.3844 146.717 11.9708 145.81 11.4911C144.559 10.8292 143.069 10.0416 143.069 8.19894C143.069 4.82106 146.844 4.1264 148.433 4.1264C149.903 4.1264 151.314 4.66278 151.314 4.66278Z" fill="#E6A540" />
+                                        </g>
+                                        <g style="mix-blend-mode:color">
+                                            <rect y="0.986755" width="162" height="19.0133" fill="black" />
+                                        </g>
+                                    </svg>
+
+                                </span>
+
+                            </div>
+
+                            <div class="bg-off-white rounded-lg p-6">
+                                <p class="font-display text-[14px] leading-[150%] font-normal text-dark-gray">Integer mollis lectus non leo auctor consequat. Duis faucibus dui nibh, in congue sapien imperdiet id. Pellentesque et elementum elit. Donec tempus, </p>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+            <!-- cart billing end -->
+
+
+
+            <!-- cart details start -->
+            <div class="cart-total p-8 h-auto lg:w-1/3 w-full">
+                <!-- cart item start  -->
+                <div class="flex justify-between items-center pb-4">
+                    <div class="flex items-center gap-3">
+                        <div>
+                            <img src="./public/assets/images/all-img/product1.png" alt="">
+                        </div>
+                        <div class="flex gap-[6px]">
+                            <p>Isolate Sofa Chair</p>
+                            <span>X</span>
+                            <p>1</p>
+                        </div>
+
+                    </div>
+                    <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">$145.00</p>
+
+                </div>
+                <!-- cart item end -->
+
+                <!-- cart item start  -->
+                <div class="flex justify-between items-center pb-4">
+                    <div class="flex items-center gap-3">
+                        <div>
+                            <img src="./public/assets/images/all-img/product2.png" alt="">
+                        </div>
+                        <div class="flex gap-[6px]">
+                            <p>Isolate Sofa Chair</p>
+                            <span>X</span>
+                            <p>1</p>
+                        </div>
+
+                    </div>
+                    <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">$145.00</p>
+
+                </div>
+                <!-- cart item end -->
+
+                <!-- cart item start  -->
+                <div class="flex justify-between items-center pb-4">
+                    <div class="flex items-center gap-3">
+                        <div>
+                            <img src="./public/assets/images/all-img/product3.png" alt="">
+                        </div>
+                        <div class="flex gap-[6px]">
+                            <p>Isolate Sofa Chair</p>
+                            <span>X</span>
+                            <p>1</p>
+                        </div>
+
+                    </div>
+                    <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">$145.00</p>
+
+                </div>
+                <!-- cart item end -->
+
+                <hr>
+
+
+                <div class="subtotal-info">
+
+                    <div class="flex justify-between items-center">
+                        <p class="common-hedding">subtotal</p>
+                        <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">$1,435.00</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-4">
+                        <p class="common-hedding">discount</p>
+                        <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">26%</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-4">
+                        <p class="common-hedding">shipping </p>
+                        <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">Free</p>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between items-center">
+                        <p class="common-hedding">Total:</p>
+                        <p class="text-gray-black text-[22px] leading-[120%] font-display font-semibold">$1026.23</p>
+                    </div>
+
+                    <div class="cursor-pointer pt-[34px]">
+                        <input id="wp-comment-cookies-consent1" name="wp-comment-cookies-consent" class="cursor-pointer" type="checkbox" value="yes">
+                        <label for="wp-comment-cookies-consent1" class="text-dark-gray text-[14px] font-display leading-[110%] font-normal">Remember all information for faster payments</label>
+                    </div>
+
+                    <button class="w-full flex gap-3 items-center justify-center mt-5 bg-accents hover:bg-[#272343] rounded-lg transition-all duration-300 py-[16px] text-[18px] font-bold font-display leading-[110%] text-gray-white  ">Place Order
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- cart details end -->
+        </div>
+    </div>
+    <!-- Sign In Form End -->
+
+    <!-- footer area start -->
+    <footer>
+        <div class="footer-top xl:pt-20 xl:pb-[60px] py-6 sm:py-8 md:py-12 shadow-[inset_0px_1px_0px_#E1E3E6]">
+            <div class="container px-3 md:px-5 xl:px-0">
+                <div class=" flex flex-wrap gap-y-6 justify-between">
+                    <div class="footer-widget max-w-[350px]">
+                        <div class="lg:mb-6 mb-4">
+                            <a href="#">
+                                <img src="./public/assets/images/all-img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <p class="lg:mb-6 mb-4 text-[#272343] text-base">Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum. Cras egestas purus </p>
+                        <ul class="flex gap-1">
+                            <li>
+                                <a href="#" class="text-[#636270] p-[11px] rounded-full border border-transparent hover:text-[#007580] hover:border-[#007580] transition-all duration-500">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1101_2875)">
+                                            <path d="M16 8C16 3.58167 12.4183 0 8 0C3.58167 0 0 3.58167 0 8C0 11.993 2.92533 15.3027 6.75 15.9027V10.3127H4.71867V8H6.75V6.23733C6.75 4.23267 7.94433 3.125 9.77167 3.125C10.6467 3.125 11.5623 3.28133 11.5623 3.28133V5.25H10.5537C9.56 5.25 9.25 5.86667 9.25 6.5V8H11.4687L11.114 10.3127H9.25V15.9027C13.0747 15.3027 16 11.9927 16 8Z" fill="currentColor" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1101_2875">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[#636270] p-[11px] rounded-full border border-transparent hover:text-[#007580] hover:border-[#007580] transition-all duration-500">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1101_2879)">
+                                            <path d="M5.03333 14.5001C11.07 14.5001 14.3723 9.49813 14.3723 5.16146C14.3723 5.0208 14.369 4.87713 14.3627 4.73646C15.0052 4.27179 15.5596 3.69621 16 3.0368C15.4017 3.3028 14.7667 3.4768 14.116 3.55213C14.8008 3.14166 15.3136 2.49681 15.5593 1.73713C14.915 2.11902 14.2104 2.38843 13.4757 2.5338C12.9807 2.00757 12.3261 1.65911 11.6132 1.54228C10.9002 1.42546 10.1687 1.54679 9.53161 1.88752C8.89456 2.22824 8.38752 2.76937 8.08891 3.42721C7.79031 4.08506 7.71677 4.82296 7.87967 5.5268C6.575 5.46133 5.29865 5.12242 4.13336 4.53206C2.96806 3.94169 1.93984 3.11303 1.11533 2.0998C0.696305 2.82229 0.568091 3.67723 0.756747 4.49086C0.945403 5.30449 1.43677 6.01576 2.131 6.48013C1.60977 6.46361 1.09995 6.3233 0.643667 6.0708V6.11146C0.643231 6.86962 0.905349 7.60455 1.38547 8.19131C1.86559 8.77808 2.53409 9.18048 3.27733 9.33013C2.79463 9.46221 2.28801 9.48149 1.79667 9.38646C2.00644 10.0385 2.41454 10.6087 2.964 11.0176C3.51346 11.4266 4.17688 11.6537 4.86167 11.6675C4.18054 12.2026 3.40049 12.5981 2.56623 12.8313C1.73197 13.0644 0.859899 13.1306 0 13.0261C1.50191 13.9895 3.24899 14.5012 5.03333 14.5001Z" fill="currentColor" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1101_2879">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[#636270] p-[11px] rounded-full border border-transparent hover:text-[#007580] hover:border-[#007580] transition-all duration-500">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.6667 4.66667C10.6667 4.48986 10.7369 4.32029 10.8619 4.19526C10.9869 4.07024 11.1565 4 11.3333 4C11.5101 4 11.6797 4.07024 11.8047 4.19526C11.9298 4.32029 12 4.48986 12 4.66667C12 4.84348 11.9298 5.01305 11.8047 5.13807C11.6797 5.2631 11.5101 5.33333 11.3333 5.33333C11.1565 5.33333 10.9869 5.2631 10.8619 5.13807C10.7369 5.01305 10.6667 4.84348 10.6667 4.66667Z" fill="currentColor" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99998 4.83301C7.16013 4.83301 6.35467 5.16664 5.76081 5.7605C5.16694 6.35437 4.83331 7.15982 4.83331 7.99967C4.83331 8.83953 5.16694 9.64498 5.76081 10.2388C6.35467 10.8327 7.16013 11.1663 7.99998 11.1663C8.83983 11.1663 9.64529 10.8327 10.2392 10.2388C10.833 9.64498 11.1666 8.83953 11.1666 7.99967C11.1666 7.15982 10.833 6.35437 10.2392 5.7605C9.64529 5.16664 8.83983 4.83301 7.99998 4.83301ZM5.83331 7.99967C5.83331 7.42504 6.06159 6.87394 6.46792 6.46761C6.87424 6.06128 7.42534 5.83301 7.99998 5.83301C8.57462 5.83301 9.12572 6.06128 9.53204 6.46761C9.93837 6.87394 10.1666 7.42504 10.1666 7.99967C10.1666 8.57431 9.93837 9.12541 9.53204 9.53174C9.12572 9.93807 8.57462 10.1663 7.99998 10.1663C7.42534 10.1663 6.87424 9.93807 6.46792 9.53174C6.06159 9.12541 5.83331 8.57431 5.83331 7.99967Z" fill="currentColor" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5053 1.88853C9.17557 1.63026 6.82441 1.63026 4.49465 1.88853C3.15332 2.03853 2.06999 3.09519 1.91265 4.44319C1.63625 6.80625 1.63625 9.19347 1.91265 11.5565C2.06999 12.9045 3.15265 13.9612 4.49465 14.1112C6.80532 14.3692 9.19465 14.3692 11.5053 14.1112C12.8467 13.9612 13.93 12.9045 14.0873 11.5565C14.3638 9.19347 14.3638 6.80625 14.0873 4.44319C13.93 3.09519 12.8473 2.03853 11.5053 1.88853ZM4.60532 2.88186C6.86152 2.63177 9.13845 2.63177 11.3947 2.88186C12.2813 2.98186 12.9913 3.68119 13.0947 4.55986C13.362 6.8454 13.362 9.15431 13.0947 11.4399C12.9913 12.3185 12.2813 13.0185 11.3947 13.1172C9.13845 13.3673 6.86152 13.3673 4.60532 13.1172C3.71865 13.0185 3.00865 12.3185 2.90532 11.4399C2.63802 9.15431 2.63802 6.8454 2.90532 4.55986C3.00865 3.68119 3.71865 2.98119 4.60532 2.88253V2.88186Z" fill="currentColor" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[#636270] p-[11px] rounded-full border border-transparent hover:text-[#007580] hover:border-[#007580] transition-all duration-500">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1101_2893)">
+                                            <path d="M8 0C3.58133 0 0 3.58133 0 8C0 11.3907 2.10933 14.2843 5.08433 15.45C5.01567 14.8157 4.95 13.8467 5.11267 13.1563C5.25933 12.5313 6.05 9.18133 6.05 9.18133C6.05 9.18133 5.80933 8.703 5.80933 7.99367C5.80933 6.88133 6.453 6.05 7.256 6.05C7.93733 6.05 8.26867 6.56267 8.26867 7.178C8.26867 7.86566 7.83133 8.89066 7.60633 9.84066C7.41867 10.6373 8.00633 11.2873 8.79067 11.2873C10.2123 11.2873 11.3063 9.78733 11.3063 7.625C11.3063 5.70933 9.93133 4.36867 7.96567 4.36867C5.69067 4.36867 4.353 6.075 4.353 7.84066C4.353 8.528 4.61867 9.26566 4.95 9.66566C5.01567 9.74366 5.025 9.81566 5.00633 9.89366C4.947 10.147 4.80967 10.6903 4.78433 10.8C4.75 10.9467 4.66867 10.978 4.51567 10.9063C3.51567 10.4407 2.89067 8.98133 2.89067 7.80633C2.89067 5.28133 4.725 2.96567 8.175 2.96567C10.95 2.96567 13.1063 4.94367 13.1063 7.58733C13.1063 10.344 11.3687 12.5623 8.95633 12.5623C8.147 12.5623 7.38433 12.1407 7.122 11.6437C7.122 11.6437 6.722 13.172 6.625 13.547C6.44367 14.2403 5.95633 15.1127 5.63133 15.6437C6.3986 15.8804 7.19706 16.0005 8 16C12.4187 16 16 12.4187 16 8C16 3.58133 12.4187 0 8 0Z" fill="currentColor" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1101_2893">
+                                                <rect width="16" height="16" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-[#636270] p-[11px] rounded-full border border-transparent hover:text-[#007580] hover:border-[#007580] transition-all duration-500">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.8407 4.80007C15.8407 4.80007 15.6843 3.69674 15.203 3.21274C14.5937 2.57507 13.9123 2.57207 13.6 2.5344C11.3627 2.37207 8.00333 2.37207 8.00333 2.37207H7.99667C7.99667 2.37207 4.63767 2.37207 2.4 2.5344C2.08733 2.57207 1.40633 2.57507 0.796667 3.21274C0.316 3.69674 0.162667 4.80007 0.162667 4.80007C0.162667 4.80007 0 6.09674 0 7.39074V8.60307C0 9.89707 0.159333 11.1937 0.159333 11.1937C0.159333 11.1937 0.315667 12.2971 0.793667 12.7814C1.403 13.4187 2.203 13.3971 2.55933 13.4657C3.84067 13.5877 8 13.6251 8 13.6251C8 13.6251 11.3623 13.6187 13.6 13.4594C13.9127 13.4221 14.5937 13.4187 15.2033 12.7814C15.6843 12.2971 15.8407 11.1937 15.8407 11.1937C15.8407 11.1937 16 9.9004 16 8.6034V7.39107C16 6.0974 15.8407 4.8004 15.8407 4.8004V4.80007ZM6.34667 10.0751V5.5784L10.6683 7.8344L6.34667 10.0751Z" fill="currentColor" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-widget">
+                        <h2 class="widget-title text-[#9A9CAA] text-sm leading-[110%] font-display font-medium uppercase mb-5">Category</h2>
+                        <ul class="flex flex-col gap-3">
+                            <li>
+                                <a href="#" class="footer-link text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 inline-block pb-1 ease-in-out">Sofa</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 inline-block pb-1">Armchair</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 inline-block pb-1">Wing Chair</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 inline-block pb-1">Desk Chair</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 inline-block pb-1">wooden Chair</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 inline-block pb-1">Park Bench</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-widget">
+                        <h2 class="widget-title text-[#9A9CAA] text-sm leading-[110%] font-display font-medium uppercase mb-5">Support</h2>
+                        <ul class="flex flex-col gap-3">
+                            <li>
+                                <a href="#" class="footer-link text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 inline-block pb-1">Help & Support</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 inline-block pb-1">Tearms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500  inline-block pb-1">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 inline-block pb-1">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- footer newsletter -->
+                    <div class="footer-widget w-[424px]">
+                        <h2 class="widget-title text-[#9A9CAA] text-sm leading-[110%] font-display font-medium uppercase mb-5">Newsletter</h2>
+                        <form action="" class="flex flex-wrap xl:flex-nowrap gap-3">
+                            <input type="text" name="" id="" class="bg-[#FFFFFF] block max-w-[285px] w-full px-5 py-[15px] rounded-lg focus:outline-none focus:ring-2 focus:ring-accents transition duration-300 ease-in-out border border-[#E1E3E6]" placeholder="Your email">
+                            <button type="submit" class="btn-primary">Subscribe</button>
+                        </form>
+                        <p class="py-3 text-[#272343] opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim.</p>
+                    </div>
+                    <!-- footer newsletter end -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom shadow-[inset_0px_1px_0px_#E1E3E6] py-6">
+            <div class="container px-3 md:px-5 xl:px-0">
+                <div class="flex flex-wrap sm:justify-between sm:flex-nowrap justify-center items-center gap-y-6">
+                    <p class="text-center text-[#9A9CAA]">@ 2021 - Blogy - Designed & Develop by <b class="text-grayscales-900">Zakirsoft</b></p>
+                    <div class="inline-flex justify-center h-[27px] w-[227px]">
+                        <img src="./public/assets/images/all-img/payments.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- script file here -->
+    <script src="./public/assets/plugins/js/jquery.js"></script>
+    <script src="./public/assets/plugins/js/swipper.js"></script>
+    <script src="./public/assets/plugins/js/select2.js"></script>
+    <script src="./public/assets/plugins/js/mixitUp.js"></script>
+    <script src="./public/js/app.js"></script>
+</body>
+
+</html>
